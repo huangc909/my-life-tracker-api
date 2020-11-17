@@ -22,4 +22,4 @@ const lifeCategorySchema = new mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('lifeCategory', lifeCategorySchema)
+module.exports = mongoose.model('LifeCategory', lifeCategorySchema)
