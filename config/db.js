@@ -1,7 +1,7 @@
 'use strict'
 
 // creating a base name for the mongodb
-const mongooseBaseName = 'life-tracker-api'
+const mongooseBaseName = 'my-life-tracker-api'
 
 // create the mongodb uri for development and test
 const database = {
