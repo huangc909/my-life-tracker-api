@@ -4,7 +4,7 @@ const express = require('express')
 const passport = require('passport')
 
 // pull in Mongoose model for examples
-const Example = require('../models/example')
+const LifeCategory = require('../models/lifeCategory')
 
 // passing this as a second argument to `router.<verb>` will make it
 // so that a token MUST be passed for that route to be available
@@ -17,7 +17,7 @@ const router = express.Router()
 // INDEX
 // GET /lifeCategories
 router.get('/lifeCategories', requireToken, (req, res, next) => {
-  Example.find()
+  LifeCategory.find()
     .then(lifeCategories => {
       // `lifeCategories` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
